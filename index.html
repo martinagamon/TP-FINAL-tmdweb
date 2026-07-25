@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>La Caterva — Teatro Comunitario de City Bell</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .link-contacto {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .link-contacto__icono {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Manchas decorativas globales -->
+  <div class="mancha mancha--verde" aria-hidden="true"></div>
+  <div class="mancha mancha--rosa" aria-hidden="true"></div>
+  
+
+  <!-- ORGANISMO: Encabezado -->
+  <header class="encabezado-sitio">
+    <div class="encabezado-sitio__inner">
+      <a href="#" class="encabezado-sitio__logo" aria-label="La Caterva — inicio">
+        <span class="encabezado-sitio__logo-nombre">La Caterva</span>
+        <span class="encabezado-sitio__logo-sub">Teatro Comunitario · City Bell</span>
+      </a>
+      <nav class="nav-principal" aria-label="Navegación principal">
+        <ul class="nav-principal__lista">
+          <li><a href="#quienes" class="nav-principal__link">Quiénes somos</a></li>
+          <li><a href="#vecinos" class="nav-principal__link">Vecinos</a></li>
+          <li><a href="#funciones" class="nav-principal__link">Funciones</a></li>
+          <li><a href="#archivo" class="nav-principal__link">Archivo</a></li>
+          <li><a href="#sumate" class="nav-principal__link">Sumate</a></li>
+          <li><a href="#contacto" class="nav-principal__link">Contacto</a></li>
+        </ul>
+      </nav>
+      <a href="https://wa.link/s1zzg8" class="boton-primario" target="_blank" rel="noopener">Reservar entrada</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ORGANISMO: Hero -->
+    <section class="hero-principal" aria-label="Presentación">
+      <div class="hero-principal__decoracion" aria-hidden="true">
+        <svg class="trazo trazo--hero-1" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M104 15 C105 22, 109 26, 116 27 C109 28, 105 32, 104 39 C103 32, 99 28, 92 27 C99 26, 103 22, 104 15 Z" fill="#E989A7" opacity="0.65"/>
+          <path d="M28 85 C29 92, 33 96, 40 97 C33 98, 29 102, 28 109 C27 102, 23 98, 16 97 C23 96, 27 92, 28 85 Z" fill="#F4CD4F" opacity="0.7"/>
+          <circle cx="55" cy="55" r="3" fill="#A7C252" opacity="0.6"/>
+        </svg>
+        <svg class="trazo trazo--hero-2" viewBox="0 0 110 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M22 15 C23 24, 28 29, 37 30 C28 31, 23 36, 22 45 C21 36, 16 31, 7 30 C16 29, 21 24, 22 15 Z" fill="#A7C252" opacity="0.6"/>
+          <circle cx="80" cy="70" r="4" fill="#E989A7" opacity="0.55"/>
+          <circle cx="65" cy="45" r="2.5" fill="#F4CD4F" opacity="0.5"/>
+        </svg>
+        <div class="blob blob--amarillo" aria-hidden="true"></div>
+        <div class="blob blob--verde-hero" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-principal__contenido">
+        <p class="etiqueta">City Bell · desde 2006</p>
+        <h1 class="hero-principal__titulo">
+          Teatro de la<br>
+          <em>comunidad</em><br>
+          para la comunidad
+        </h1>
+        <p class="hero-principal__descripcion">La Caterva es mucho más que teatro: es vecindad, comunidad y encuentro sobre el escenario.</p>
+        <div class="hero-principal__acciones">
+          <a href="#funciones" class="boton-primario">Próximas funciones</a>
+          <a href="#sumate" class="boton-secundario">Sumate al elenco</a>
+        </div>
+      </div>
+
+      <div class="hero-principal__imagen">
+        <div class="imagen-marco">
+          <img src="Vecinos y vecinas de La Caterva en escena.GIF" alt="Vecinos y vecinas de La Caterva en escena" width="560" height="480" />
+          <svg class="trazo trazo--imagen" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M55 60 C56 71, 63 79, 75 81 C63 83, 56 91, 55 102 C54 91, 47 83, 35 81 C47 79, 54 71, 55 60 Z" fill="#F4CD4F" opacity="0.75"/>
+            <path d="M110 20 C111 27, 115 31, 122 32 C115 33, 111 37, 110 44 C109 37, 105 33, 98 32 C105 31, 109 27, 110 20 Z" fill="#8D0470" opacity="0.55"/>
+            <circle cx="35" cy="30" r="3" fill="#A7C252" opacity="0.5"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORGANISMO: Stats -->
+    <section class="franja-stats" aria-label="La Caterva en números">
+      <div class="franja-stats__inner">
+        <div class="stat-destacado">
+          <span class="stat-destacado__numero">20</span>
+          <span class="stat-destacado__label">años en escena</span>
+        </div>
+        <div class="stat-destacado">
+          <span class="stat-destacado__numero">70+</span>
+          <span class="stat-destacado__label">vecinos actuantes</span>
+        </div>
+        <div class="stat-destacado">
+          <span class="stat-destacado__numero">100+</span>
+          <span class="stat-destacado__label">funciones presentadas</span>
+        </div>
+        <div class="stat-destacado">
+          <span class="stat-destacado__numero">1</span>
+          <span class="stat-destacado__label">galpón propio</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORGANISMO: Quiénes somos -->
+    <section class="seccion-quienes" id="quienes" aria-labelledby="titulo-quienes">
+      <div class="seccion-quienes__inner">
+
+        <div class="seccion-quienes__imagen">
+          <div class="imagen-marco imagen-marco--quienes">
+            <img src="lacat.png" alt="El grupo de La Caterva en ensayo" width="500" height="420" />
+            <div class="blob blob--rosa-quienes" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="seccion-quienes__texto">
+          <p class="etiqueta">Quiénes somos</p>
+          <h2 class="titulo-seccion" id="titulo-quienes">Arte como motor de conciencia y transformación social</h2>
+          <svg class="trazo trazo--quienes" viewBox="0 0 140 70" fill="none" aria-hidden="true">
+            <path d="M22 20 C23 27, 27 31, 34 32 C27 33, 23 37, 22 44 C21 37, 17 33, 10 32 C17 31, 21 27, 22 20 Z" fill="#E989A7" opacity="0.65"/>
+            <path d="M85 35 C86 41, 89 44, 95 45 C89 46, 86 49, 85 55 C84 49, 81 46, 75 45 C81 44, 84 41, 85 35 Z" fill="#8D0470" opacity="0.55"/>
+            <circle cx="60" cy="12" r="2.5" fill="#F4CD4F" opacity="0.6"/>
+          </svg>
+          <p>La Caterva es mucho más que teatro: es vecindad, comunidad y encuentro sobre el escenario. Nace en 2006 como proyecto de vecinas y vecinos para crear teatro en comunidad en City Bell, con la certeza de que es posible habitar un presente diferente.</p>
+          <p>Como colectivo, creemos en el arte como motor de conciencia y transformación social: toda persona es esencialmente creativa y encuentra en el teatro una voz para expresar su verdad. Ponderamos la recuperación de la identidad, la valorización de la cultura local, la integración comunitaria, las políticas de memoria y valores democráticos, y la concientización sobre las violencias de género y de cualquier índole.</p>
+          <p>Todas nuestras actividades —teatro comunitario, teatro comunitario infantil y talleres de conciencia vocal— son gratuitas y abiertas a la comunidad. La Caterva fue declarada de Interés Cultural por la Cámara de Diputados de la Provincia de Buenos Aires y por la Municipalidad de La Plata.</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ORGANISMO: Vecinos -->
+    <section class="seccion-vecinos" id="vecinos" aria-labelledby="titulo-vecinos">
+      <div class="seccion-vecinos__inner">
+
+        <div class="seccion-vecinos__texto">
+          <p class="etiqueta">Las vecinas y los vecinos</p>
+          <h2 class="titulo-seccion" id="titulo-vecinos">Un colectivo de casi 70 personas</h2>
+          <svg class="trazo trazo--vecinos" viewBox="0 0 130 70" fill="none" aria-hidden="true">
+            <path d="M12 15 C13 22, 17 26, 24 27 C17 28, 13 32, 12 39 C11 32, 7 28, 0 27 C7 26, 11 22, 12 15 Z" fill="#F4CD4F" opacity="0.75"/>
+            <path d="M75 38 C76 44, 79 47, 85 48 C79 49, 76 52, 75 58 C74 52, 71 49, 65 48 C71 47, 74 44, 75 38 Z" fill="#A7C252" opacity="0.6"/>
+            <circle cx="105" cy="18" r="2.5" fill="#E989A7" opacity="0.55"/>
+          </svg>
+          <p>El colectivo se conforma por un grupo de aproximadamente 70 personas, que participan de las obras realizando diversas tareas ya sea en las áreas teatrales, como técnicos de sonido, en la música, iluminación, vestuario, maquillaje o plástica, entre otras.</p>
+          <div class="seccion-vecinos__tareas">
+            <span class="chip-tarea">Actuación</span>
+            <span class="chip-tarea">Música</span>
+            <span class="chip-tarea">Sonido</span>
+            <span class="chip-tarea">Iluminación</span>
+            <span class="chip-tarea">Vestuario</span>
+            <span class="chip-tarea">Maquillaje</span>
+            <span class="chip-tarea">Plástica</span>
+          </div>
+        </div>
+
+        <div class="seccion-vecinos__imagen">
+          <div class="imagen-marco imagen-marco--vecinos">
+            <img src="backstage.png" alt="Vecinas y vecinos de La Caterva compartiendo backstage" width="500" height="420" />
+            <div class="blob blob--verde-vecinos" aria-hidden="true"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ORGANISMO: Próximas funciones -->
+    <section class="seccion-funciones" id="funciones" aria-labelledby="titulo-funciones">
+      <div class="seccion-funciones__inner">
+        <header class="seccion__encabezado">
+          <p class="etiqueta">Agenda</p>
+          <h2 class="titulo-seccion" id="titulo-funciones">Próximas funciones</h2>
+          <svg class="trazo trazo--seccion" viewBox="0 0 150 70" fill="none" aria-hidden="true">
+            <path d="M12 2 C13 8, 16 11, 22 12 C16 13, 13 16, 12 22 C11 16, 8 13, 2 12 C8 11, 11 8, 12 2 Z" fill="#F4CD4F" opacity="0.8"/>
+            <path d="M60 35 C61 41, 65 44, 71 45 C65 46, 61 50, 60 56 C59 50, 55 46, 49 45 C55 44, 59 41, 60 35 Z" fill="#A7C252" opacity="0.6"/>
+            <circle cx="115" cy="20" r="4" fill="#E989A7" opacity="0.6"/>
+          </svg>
+        </header>
+
+        <div class="grilla-funciones">
+
+          <article class="tarjeta-evento tarjeta-evento--proxima">
+            <div class="tarjeta-evento__imagen">
+              <img src="funpro.png" alt="Afiche de Templo, Estancia, Batallón" width="200" height="100" />
+              <span class="etiqueta tarjeta-evento__badge">Próxima</span>
+            </div>
+            <div class="tarjeta-evento__cuerpo">
+              <h3 class="tarjeta-evento__titulo">Templo, Estancia, Batallón</h3>
+              <p class="tarjeta-evento__subtitulo">La historia de nuestra región</p>
+              <ul class="tarjeta-evento__meta">
+                <li class="item-meta">
+                  <span class="icono" aria-hidden="true">📅</span>
+                  <span>Agosto 2026 · fecha a confirmar</span>
+                </li>
+                <li class="item-meta">
+                  <span class="icono" aria-hidden="true">📍</span>
+                  <span>El Galpón de La Caterva · 471 y 14B, City Bell</span>
+                </li>
+                <li class="item-meta">
+                  <span class="icono" aria-hidden="true">🎟</span>
+                  <span>A la gorra · Apto todo público · 50 min</span>
+                </li>
+              </ul>
+              <a href="https://wa.link/s1zzg8" class="boton-primario tarjeta-evento__cta" target="_blank" rel="noopener">Reservar por WhatsApp</a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Funciones pasadas recientes -->
+        <div class="funciones-pasadas">
+          <p class="etiqueta">Últimas funciones</p>
+          <ul class="lista-funciones-pasadas">
+            <li class="item-funcion-pasada">
+              <span class="item-funcion-pasada__fecha">18 Jul 2026</span>
+              <span class="item-funcion-pasada__nombre">Despiertas: ¿quiénes fueron ellas?</span>
+            </li>
+            <li class="item-funcion-pasada">
+              <span class="item-funcion-pasada__fecha">4 Jul 2026</span>
+              <span class="item-funcion-pasada__nombre">Templo, Estancia, Batallón</span>
+            </li>
+            <li class="item-funcion-pasada">
+              <span class="item-funcion-pasada__fecha">30 May 2026</span>
+              <span class="item-funcion-pasada__nombre">Templo, Estancia, Batallón</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ORGANISMO: Archivo / galería -->
+    <section class="seccion-archivo" id="archivo" aria-labelledby="titulo-archivo">
+      <div class="seccion-archivo__inner">
+        <header class="seccion__encabezado">
+          <p class="etiqueta">Memorias</p>
+          <h2 class="titulo-seccion" id="titulo-archivo">Obras y momentos</h2>
+          <svg class="trazo trazo--archivo" viewBox="0 0 150 70" fill="none" aria-hidden="true">
+            <path d="M28 45 C29 52, 33 56, 40 57 C33 58, 29 62, 28 69 C27 62, 23 58, 16 57 C23 56, 27 52, 28 45 Z" fill="#F4CD4F" opacity="0.7"/>
+            <path d="M95 8 C96 14, 100 17, 106 18 C100 19, 96 23, 95 29 C94 23, 90 19, 84 18 C90 17, 94 14, 95 8 Z" fill="#E989A7" opacity="0.65"/>
+            <circle cx="130" cy="45" r="3.5" fill="#A7C252" opacity="0.6"/>
+          </svg>
+        </header>
+        <div class="grilla-galeria">
+          <figure class="item-galeria">
+            <img src="elencoEnEscenario.avif" alt="Función en El Galpón" width="400" height="300" />
+          </figure>
+          <figure class="item-galeria item-galeria--grande">
+            <img src="funcion.png" alt="Elenco completo en escena" width="800" height="500" />
+          </figure>
+          <figure class="item-galeria">
+            <img src="vine.jpeg" alt="Vecinos en el escenario" width="400" height="300" />
+          </figure>
+          <figure class="item-galeria">
+            <img src="musica.png" alt="Música en vivo" width="400" height="300" />
+          </figure>
+          <figure class="item-galeria">
+            <img src="vecinos.png" alt="El público en El Galpón" width="400" height="300" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORGANISMO: Sumate -->
+    <section class="seccion-sumate" id="sumate" aria-labelledby="titulo-sumate">
+      <div class="seccion-sumate__decoracion" aria-hidden="true">
+        <div class="blob blob--amarillo-sumate"></div>
+        <svg class="trazo trazo--sumate" viewBox="0 0 180 180" fill="none">
+          <path d="M40 15 C42 26, 49 33, 60 35 C49 37, 42 44, 40 55 C38 44, 31 37, 20 35 C31 33, 38 26, 40 15 Z" fill="#F5F0E8" opacity="0.28"/>
+          <circle cx="130" cy="95" r="5" fill="#F5F0E8" opacity="0.25"/>
+          <circle cx="140" cy="30" r="4" fill="#F5F0E8" opacity="0.3"/>
+        </svg>
+        <svg class="trazo trazo--sumate-2" viewBox="0 0 130 130" fill="none">
+          <path d="M22 4C23 11, 27 15, 34 16 C27 17, 23 21, 22 28 C21 21, 17 17, 10 16 C17 15, 21 11, 22 4 Z" fill="#F5F0E8" opacity="0.28"/>
+          <circle cx="80" cy="75" r="4" fill="#F5F0E8" opacity="0.22"/>
+        </svg>
+      </div>
+      <div class="seccion-sumate__inner">
+        <p class="etiqueta etiqueta--clara">Participá</p>
+        <h2 class="titulo-seccion" id="titulo-sumate">No hace falta saber actuar</h2>
+        <p class="seccion-sumate__descripcion">La Caterva crece sumando vecinos y vecinas de todas las edades. Cada año convocamos para participar en actuación, escenografía, música, vestuario o lo que tengas ganas de aportar.</p>
+        <a href="https://wa.link/s1zzg8" class="boton-claro" target="_blank" rel="noopener">Quiero sumarme</a>
+      </div>
+    </section>
+
+    <!-- ORGANISMO: Contacto -->
+    <section class="seccion-contacto" id="contacto" aria-labelledby="titulo-contacto">
+      <div class="seccion-contacto__inner">
+
+        <div class="seccion-contacto__info">
+          <p class="etiqueta">Encontranos</p>
+          <h2 class="titulo-seccion" id="titulo-contacto">Dónde estamos</h2>
+          <svg class="trazo trazo--contacto" viewBox="0 0 120 60" fill="none" aria-hidden="true">
+            <path d="M25 15 C26 21, 30 24, 36 25 C30 26, 26 30, 25 36 C24 30, 20 26, 14 25 C20 24, 24 21, 25 15 Z" fill="#8D0470" opacity="0.55"/>
+            <circle cx="95" cy="15" r="3" fill="#A7C252" opacity="0.6"/>
+          </svg>
+          <address class="seccion-contacto__datos">
+            <p><strong>El Galpón de La Caterva</strong></p>
+            <p>471 y 14B, City Bell, La Plata</p>
+            <p>
+              <a href="tel:+5492214183597" class="link-contacto">
+                <svg class="link-contacto__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <span>+54 9 221 418-3597</span>
+              </a>
+            </p>
+            <p>
+              <a href="https://wa.link/s1zzg8" class="link-contacto" target="_blank" rel="noopener">
+                <svg class="link-contacto__icono" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01C17.19 3.03 14.7 2 12.04 2zm0 18.13c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.18 8.18 0 0 1-1.26-4.36c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.83 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.55-3.7 8.23-8.24 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.78.97-.15.17-.29.19-.54.06-.25-.12-1.04-.38-1.99-1.22-.73-.66-1.23-1.46-1.37-1.71-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.86.84-.86 2.05 0 1.21.88 2.38 1 2.54.12.17 1.73 2.64 4.2 3.7.59.25 1.05.4 1.41.52.59.19 1.13.16 1.55.1.47-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.15-1.18-.06-.1-.23-.16-.48-.28z"/></svg>
+                <span>WhatsApp reservas</span>
+              </a>
+            </p>
+            <p>
+              <a href="mailto:lacatervadecitybell@gmail.com" class="link-contacto">
+                <svg class="link-contacto__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
+                <span>lacatervadecitybell@gmail.com</span>
+              </a>
+            </p>
+            <p>
+              <a href="https://www.instagram.com/lacatervadecitybell/" class="link-contacto" target="_blank" rel="noopener">
+                <svg class="link-contacto__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg>
+                <span>@lacatervadecitybell</span>
+              </a>
+            </p>
+            <p>
+              <a href="https://www.youtube.com/user/lacatervadecitybell" class="link-contacto" target="_blank" rel="noopener">
+                <svg class="link-contacto__icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
+                <span>YouTube</span>
+              </a>
+            </p>
+          </address>
+
+          <div class="horario-ensayos">
+            <p class="etiqueta">Horarios</p>
+            <ul class="lista-horarios">
+              <li><span>Ensayos</span><span>Lunes y miércoles 19:30</span></li>
+              <li><span>Funciones</span><span>Sábados 20 h (ver cartelera)</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <form class="formulario-contacto" action="#" method="post" aria-label="Formulario de contacto">
+          <h3 class="formulario-contacto__titulo">Escribinos</h3>
+          <div class="campo-grupo">
+            <label for="nombre" class="campo-label">Nombre</label>
+            <input type="text" id="nombre" name="nombre" class="campo-texto" placeholder="Tu nombre" required />
+          </div>
+          <div class="campo-grupo">
+            <label for="email" class="campo-label">Email</label>
+            <input type="email" id="email" name="email" class="campo-texto" placeholder="tu@email.com" required />
+          </div>
+          <div class="campo-grupo">
+            <label for="mensaje" class="campo-label">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" class="campo-texto campo-texto--textarea" placeholder="¿Consultas, reservas, querés sumarte?" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="boton-primario">Enviar mensaje</button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ORGANISMO: Footer -->
+  <footer class="pie-sitio">
+    <div class="pie-sitio__inner">
+      <div class="pie-sitio__marca">
+        <span class="pie-sitio__nombre">La Caterva</span>
+        <span class="pie-sitio__sub">Teatro Comunitario · City Bell · desde 2006</span>
+      </div>
+      <nav class="pie-sitio__nav" aria-label="Navegación secundaria">
+        <a href="#quienes">Quiénes somos</a>
+        <a href="#vecinos">Vecinos</a>
+        <a href="#funciones">Funciones</a>
+        <a href="#sumate">Sumate</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <p class="pie-sitio__creditos">Hecho con vecinxs y vecinas</p>
+    </div>
+  </footer>
+
+</body>
+</html>
