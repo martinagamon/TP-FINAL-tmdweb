@@ -84,7 +84,6 @@ address { font-style: normal; }
   border-radius: 2px;
   cursor: pointer;
   transition: background-color 0.2s, color 0.2s;
-  margin-left: auto;
 }
 
 .boton-primario:hover,
@@ -537,14 +536,11 @@ address { font-style: normal; }
   border-bottom: 1px solid rgba(245,240,232,0.06);
 }
 
-.encabezado-sitio__inner {
-  max-width: var(--ancho-maximo);
-  margin: 0 auto;
-  padding: var(--espacio-sm) var(--espacio-md);
-  display: flex;
-  align-items: center;
-  gap: var(--espacio-md);
-  justify-content: space-between;
+.encabezado-sitio__inner { max-width: var(--ancho-maximo); 
+margin: 0 auto; 
+padding: var(--espacio-sm) var(--espacio-md); 
+display: flex; align-items: center; 
+gap: var(--espacio-md); 
 }
 
 .encabezado-sitio__logo {
