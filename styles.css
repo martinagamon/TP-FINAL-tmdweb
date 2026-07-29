@@ -536,11 +536,13 @@ address { font-style: normal; }
   border-bottom: 1px solid rgba(245,240,232,0.06);
 }
 
-.encabezado-sitio__inner { max-width: var(--ancho-maximo); 
-margin: 0 auto; 
-padding: var(--espacio-sm) var(--espacio-md); 
-display: flex; align-items: center; 
-gap: var(--espacio-md); 
+.encabezado-sitio__inner {
+  max-width: var(--ancho-maximo);
+  margin: 0 auto;
+  padding: var(--espacio-sm) var(--espacio-md);
+  display: flex;
+  align-items: center;
+  gap: var(--espacio-md);
 }
 
 .encabezado-sitio__logo {
