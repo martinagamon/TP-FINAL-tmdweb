@@ -84,6 +84,7 @@ address { font-style: normal; }
   border-radius: 2px;
   cursor: pointer;
   transition: background-color 0.2s, color 0.2s;
+  margin-left: auto;
 }
 
 .boton-primario:hover,
@@ -543,6 +544,7 @@ address { font-style: normal; }
   display: flex;
   align-items: center;
   gap: var(--espacio-md);
+  justify-content: space-between;
 }
 
 .encabezado-sitio__logo {
